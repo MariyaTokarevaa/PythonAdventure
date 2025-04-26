@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Спасибо за заказ!</h1>
+<p>Форма вашей печеньки: <strong>{{form}}</strong></p>
+
+<form action="/order">
+    <input type="submit" value="Новый заказ" />
+</form>
+{% endblock %}

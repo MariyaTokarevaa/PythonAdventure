@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form action="/order" method="post">
+    <select name="form">
+        <option value="">- Выберит форму печеньки -</option>
+        <option value="круг">Круг</option>
+        <option value="квадрат">Квадрат</option>
+        <option value="звездочка">Звездочка</option>
+    </select>
+    <input type="Submit" value="Подтвердить">
+</form>
+{% endblock %}
