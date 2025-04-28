@@ -2,7 +2,7 @@
 
 изучая книгу
 
-"A Pythonic Adventure. ОТ ОСНОВ PYTHON К РАБОТАЮЩЕМУ ВЕБ-ПРИЛОЖЕНИЮ"
+["A Pythonic Adventure. ОТ ОСНОВ PYTHON К РАБОТАЮЩЕМУ ВЕБ-ПРИЛОЖЕНИЮ"](https://github.com/MariyaTokarevaa/PythonAdventure/blob/main/priklyuchenie-v-stile-python.pdf)
 
 ПАВЕЛ АННИ. 2024 г.
 
