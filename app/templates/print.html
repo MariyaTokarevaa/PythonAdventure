@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>Спасибо за заказ!</h1>
-<p>Форма вашей печеньки: <strong>{{form}}</strong></p>
+<h1>Спасибо за заказ, {{ new_order["name"] }}!</h1>
+<p>Форма вашей печеньки: <strong>{{ new_order["form"] }}</strong></p>
+<p>Вкус вашей печеньки: <strong>{{ new_order["flavor"] }}</strong></p>
+<p>Обсыпка вашей печеньки: <strong>{{ new_order["topping"] }}</strong></p>
 
 <form action="/order">
     <input type="submit" value="Новый заказ" />

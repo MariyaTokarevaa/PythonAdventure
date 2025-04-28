@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row">
+    <img src="/static/img/logo.jpeg" alt="logo"/>
+    <h1>Магазин "Самые вкусные печеньки"!</h1>
+</div>
+<form action="/order">
+<input type="submit" value="Новый заказ" />
+</form>
+{% endblock %}

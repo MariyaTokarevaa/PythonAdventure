@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Магазин "Самые вкусные печеньки"!</h1>
+<p>Заказы:</p>
+<table>
+<tr>
+  <th>Имя</th>
+  <th>Форма</th>
+  <th>Вкус</th>
+  <th>Обсыпка</th>
+</tr>
+{% for o in orders -%}
+<tr>
+<td>{{ o['name'] }}</td>
+<td>{{ o['form'] }}</td>
+<td>{{ o['flavor'] }}</td>
+<td>{{ o['topping'] }}</td>
+</tr>
+{% endfor %}
+</table>
+{% endblock %}
+

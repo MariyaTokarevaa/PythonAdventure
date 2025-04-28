@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Магазин "Самые вкусные печеньки"!</h1>
+
+<h3>Добро пожаловать в наш магазин!</h3>
+<h3>Выбирайте самую вкусную печеньку!</h3>
+
+<form action="/order" method="post">
+    {% if error %}
+    <p><strong>{{error}}</strong></p>
+    {% endif %}
+
+    <input type="text" name="name" placeholder="Пожалуйста, введите ваше имя">
+    <select name="form">
+      <option value="">- Выберите форму печеньки -</option>
+      {% for d in forms -%}
+      <option value="{{ d }}">{{ d | capitalize }}</option>
+      {% endfor %}
+    </select>
+    <select name="flavor">
+      <option value="">- Выберите вкус печеньки -</option>
+      {% for f in flavors -%}
+      <option value="{{ f }}">{{ f | capitalize }}</option>
+      {% endfor %}
+    </select>
+    <select name="topping">
+      <option value="">- Выберите обсыпку печеньки -</option>
+      {% for t in toppings -%}
+      <option value="{{ t }}">{{ t | capitalize }}</option>
+      {% endfor %}
+    </select>
+    <input type="submit" value="Подтвердить">
+</form>
+
+<img src="/static/img/cake.png"
+ alt="Tasty cake" width="100%">
+
+{% endblock %}

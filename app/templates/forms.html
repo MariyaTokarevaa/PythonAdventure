@@ -2,12 +2,28 @@
 {% block content %}
 
 <form action="/order" method="post">
+     <input type="text" name="name" placeholder="Введите имя">
     <select name="form">
-        <option value="">- Выберит форму печеньки -</option>
+        <option value="">- Выберитe форму печеньки -</option>
         <option value="круг">Круг</option>
         <option value="квадрат">Квадрат</option>
         <option value="звездочка">Звездочка</option>
     </select>
+    <select name="flavor">
+        <option value="">- Выберите вкус печеньки -</option>
+        <option value="шоколад">Шоколад</option>
+        <option value="ваниль">Ваниль</option>
+        <option value="орех">Орех</option>
+        <option value="клубника">Клубника</option>
+        <option value="малина">Малина</option>
+    </select>
+    <select name="topping">
+        <option value="">- Выберите обсыпку печеньки -</option>
+        <option value="шоколадная глазурь">Шоколадная глазурь</option>
+        <option value="сахарная пудра">Сахарная пудра</option>
+        <option value="ореховая обсыпка">Ореховая обсыпка</option>
+    </select>
+
     <input type="Submit" value="Подтвердить">
 </form>
 {% endblock %}
